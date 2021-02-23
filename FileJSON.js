@@ -13,7 +13,7 @@ function read() {
         throw new Error("File does not exist! Create the file first!");
     }
 
-    const data = fs.readFileSync("./NkpdJSON.json");
+    const data = fs.readFileSync(JSON_FILE_LOCATION);
     return JSON.parse(data.toString());
 }
 
